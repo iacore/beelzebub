@@ -25,7 +25,7 @@ void create_list_page(const struct post * const p, const char *out)
 	xmlNode *doc_head = xmlNewNode(NULL, BAD_CAST "html");
 	xmlDocSetRootElement(doc, doc_head);
 	
-	for (const struct post *lst = p; lst->next ; lst = lst->next) {
+	for (const struct post *lst = p; lst; lst = lst->next) {
 		xmlNewChild(doc_head, NULL, BAD_CAST "h1", lst->title);
 		xmlNewChild(doc_head, NULL, BAD_CAST "p", lst->summery);
 
