@@ -7,6 +7,7 @@ struct post {
 	struct post *next;
 	xmlChar *title;
 	xmlChar *summery;
+	char *fn;
 } post;
 
 void free_post(struct post *cur);

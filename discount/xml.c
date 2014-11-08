@@ -3,34 +3,24 @@
 #include <libxml/xpath.h>
 #include <libxml/xpathInternals.h>
 #include <libxml/xmlreader.h>
+#include <assert.h>
+#include <libxml/HTMLparser.h>
+#include <libxml/HTMLtree.h>
+#include <string.h>
 
-/* Strip the first line from a file. A hacky way to get rid of the <?xml...?> bullshit
- * that libxml adds to the top of files.*/
-int strip_first(const char *path_in)
+
+/* Return a filename from a path (pointer into input string is returnred. */
+const char* get_fn(const char *path)
 {
-	FILE *fin, *fout;
+	const char *fn = strrchr(path, '/');
+	if (!fn)
+		return path;
 
-	if (open_files(&fin, &fout, path_in, "tmp"))
-		return 1;
+	++fn;
 
-	char buf[1024];
-
-	/* Discard first line. */
-	(void)fgets(buf, 1024, fin);
-
-	while (fgets(buf, 1024, fin))
-		fputs(buf, fout);
-
-	fclose(fin);
-	fclose(fout);
-
-	if (rename("tmp", path_in)) {
-		printf("Could not move <%s> to <%s>\n%s\n", 
-			path_in, "tmp", strerror(errno));
-		return 1;
-	}
-
-	return 0;
+	/* No forward slahes at the end of the string please. */
+	assert(*fn);
+	return fn;
 }
 
 /* Given the file path to a document and a header, append the document contents 
@@ -38,13 +28,15 @@ int strip_first(const char *path_in)
  * and overwrite the oringial document file with this new document. */
 int add_header(const char *f_doc, const char *f_head)
 {
-	xmlDocPtr doc = xmlParseFile(f_doc);
+	/* These fuctions are htmlParse... in order to correctly handle encoding
+	 * and HTML entities. */
+	xmlDocPtr doc = htmlParseFile(f_doc, NULL);
 	if (!doc) {
 		printf("libxml failed to parse file <%s>\n", f_doc);
 		return 1;
 	}
 
-	xmlDocPtr head = xmlParseFile(f_head);
+	xmlDocPtr head = htmlParseFile(f_head, NULL);
 	if (!head) {
 		printf("libxml failed to parse file <%s>\n", f_head);
 		return 1;
@@ -53,11 +45,11 @@ int add_header(const char *f_doc, const char *f_head)
 	xmlNode *doc_head = xmlDocGetRootElement(doc);
 	xmlNode *head_head = xmlDocGetRootElement(head);
 	(void)xmlAddChild(head_head, doc_head->children);
-	xmlSaveFile(f_doc, head); 
-	strip_first(f_doc);
+	htmlSaveFile(f_doc, head); 
 
-	xmlFreeDoc(doc);
 	xmlFreeDoc(head);
+	xmlFree(doc_head);
+	return 0;
 }
 
 void print_element_names(xmlNode *a_node)
@@ -89,14 +81,17 @@ xmlChar* get_text(xmlNode *cur)
 xmlChar* get_node_text(const char *xpath, xmlXPathContext *xpath_ctx)
 {
 	xmlChar *ret;
-	xmlXPathObject *xpath_obj = xmlXPathEvalExpression(xpath, xpath_ctx);
+	xmlChar *xml_xpath = xmlCharStrdup(xpath);
+	xmlXPathObject *xpath_obj = xmlXPathEvalExpression(xml_xpath, xpath_ctx);
 	if (!xpath_obj) {
 		puts("Could not evaluate xpath expression.\n");
+		free(xml_xpath);
 		return NULL;
 	}
 
 	ret = get_text(xpath_obj->nodesetval->nodeTab[0]);
 	xmlXPathFreeObject(xpath_obj);
+	free(xml_xpath);
 	return ret;
 }
 
@@ -104,7 +99,7 @@ xmlChar* get_node_text(const char *xpath, xmlXPathContext *xpath_ctx)
  * linked list. */
 int get_title_summery(struct post **head, const char *f_doc)
 {
-	xmlDocPtr doc = xmlParseFile(f_doc);
+	xmlDocPtr doc = htmlParseFile(f_doc, NULL);
 	if (!doc) {
 		printf("Could not parse document <%s>\n", f_doc);
 		return 1;
@@ -139,6 +134,9 @@ int get_title_summery(struct post **head, const char *f_doc)
 
 	xmlXPathFreeContext(xpath_ctx); 
 	xmlFreeDoc(doc);
+
+	lst->fn = strdup(get_fn(f_doc));
+	return 0;
 }
 
 /* Recursivly free a post linked list. */
@@ -150,6 +148,7 @@ void free_post(struct post *cur)
 	struct post *next = cur->next;
 	xmlFree(cur->title);
 	xmlFree(cur->summery);
+	free(cur->fn);
 	free(cur);
 
 	free_post(next);
