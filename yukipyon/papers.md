@@ -5,6 +5,7 @@ permalink: /stats/papers/
 tags: hidden
 ---
 | Title        | Author           |
+| 11 Best Practices for Peer Code Review | SmartBear Software |
 |A Bird's Eye View on the I2P Anonymous File-sharing Environment | \[Juan Pablo Timpanaro, Isabelle Chrisment, Olivier Festor\] |
 |A genetic-algorithm approach to solving crossword puzzles
 |Algorithms for Constraint- Satisfaction Problems
@@ -14,6 +15,7 @@ tags: hidden
 |An introduction to steganography methods | \[Masoud Nosrati, Ronak Karimi, Mehdi Hariri\] |
 |An LLVM Backend for OCaml | \[Colin Benner\] |
 |Anonymity Loves Company: Usability and the Network Effect | \[Roger Dingledine and Nick Mathewson - The Free Haven Project\] |
+| [Aspects of Kanban](http://www.methodsandtools.com/archive/archive.php?id=104) | Karl Scotland |
 |Content and popularity analysis of Tor hidden services
 |Corrupted DNS Resolution Paths: The Rise of a Malicious Resolution Authority | \[David Dagon, Niels Provos, Christopher P. Lee, Wenke Lee\] |
 |Countering Trusting Trust through Diverse Double-Compiling | \[David A. Wheeler\] |
@@ -33,10 +35,13 @@ tags: hidden
 |Formal Analysis of Chaumian Mix Nets with Randomized Partial Checking | \[Ralf K ̈ usters, Tomasz Truderung, Andreas Vogt\] |
 | [Go To Statement Considered Harmful](http://www.u.arizona.edu/~rubinson/copyright_violations/Go_To_Considered_Harmful.html) | Edsger W. Dijkstra |
 | [How Linux Capability Works](http://www.cis.syr.edu/~wedu/seed/Labs/Documentation/Linux/How_Linux_Capability_Works.pdf) | |
+| [How to Make Your Culture Work with Agile, Kanban & Software Craftsmanship](http://www.methodsandtools.com/archive/agileculture.php) | Michael Sahota |
+| [How to Prevent the next Heartbleed](http://www.dwheeler.com/essays/heartbleed.html) | David A. Wheeler | 
 |IBM developerWorks: A look at aspect-oriented programming
 |IBM developerWorks: Use your singletons wisely
 |Idioms: Building High Performance Networking Servers using Tcl | \[Todd Coram\] |
 |Implementing IPsec | \[Angelos D. Keromytis, John Ioannidis, Jonathan M. Smith\] |
+| [Kanban for Skeptics](http://www.methodsandtools.com/archive/kanbanskeptics.php) | Nick Oostvogels |
 | [LLVM: A Compilation Framework for Lifelong Program Analysis & Transformation](http://llvm.org/pubs/2004-01-30-CGO-LLVM.html) |  Chris Lattner and Vikram Adve  |
 |Manufacturing Compromise: The Emergence of Exploit-as-a-Service | \[Niels Provos, others.\] |
 |Measuring Freenet in the Wild: Censorship-resilience under Observation | \[Stefanie Roos, Benjamin Schiller, Stefan Hacker, Thorsten Strufe\] |
@@ -59,6 +64,7 @@ tags: hidden
 |Solving Crossword Puzzles as Probabilistic Constraint Satisfaction
 |Solving Crosswords with Proverb
 | The Challenge of Cross-language Interoperability | \[David Chisnall\] |
+| [The insecurity of OpenBSD ](https://allthatiswrong.wordpress.com/2010/01/20/the-insecurity-of-openbsd/) | |
 | The Sniper Attack: Anonymously Deanonymizing and Disabling the Tor Network | \[Rob Jansen, Florian Tschorsch, Aaron Johnson, Bjorn Scheuermann\] |
 | Time, Clocks, and the Ordering of Events in a Distributed System | \[Leslie Lamport\] |
 | Timing analysis in low-latency mix networks: attacks and defenses
