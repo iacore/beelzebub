@@ -1,0 +1,66 @@
+#lang racket
+(define books-security '(
+
+("Hacking Exposed Malware & Rootkits"
+"Michael Davis, Sean Bodmer, Christopher Elisan"
+"400/400"
+()
+)
+
+("Hacking the Xbox - An introduction to reverse engineering"
+"Andrew \"Bunnie\" Huang"
+"286/286"
+"Electronics, security")
+
+("Malware Analyst's Cookbook"
+"Michael Ligh, Steven Adair, Blake Hartstein, Matthew Richard"
+"744/744"
+())
+
+("Radare2"
+"Various"
+"75/75"
+"Debugging and Reverse Engineering")
+
+("SELinux System Administration"
+"Sven Vermeulen"
+"120/120"
+"SELinux, Mandatory Access Controls, Linux Administration, Security")
+
+("Silence on the Wire - A Field Guide to Passive Reconnaissance and Indirect Attacks"
+"Michal Zalewski"
+"224/224"
+"Security")
+
+("The Art of Computer Virus Research and Defense"
+"Peter Szor"
+"744/744"
+())
+
+("The Art of Software Security Assessment"
+"Mark Dowd, John McDonald, Justin Schuh"
+"1200/1200"
+"Security, Source Code Auiditing")
+
+("The Rootkit Arsenal"
+"Bill Blunden"
+"784/784"
+"Security, Operating systems, API design, Computer Architecture")
+
+("The Tangled Web"
+"Michal Zalewski"
+"344/344"
+"Secruity, Web Application Security, Web Browser Security")
+
+("The Art of Deception"
+"Kevin Mitnick"
+"368/368"
+())
+
+("The Art of Intrusion"
+"Kevin Mitnick"
+"288/288"
+())
+
+))
+(provide books-security)

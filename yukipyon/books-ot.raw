@@ -1,0 +1,81 @@
+#lang racket
+(define books-other '(
+
+("A History of Japan"
+"R.H.P. Mason and J.G. Caiger"
+"400/400"
+"")
+
+("How to Win Friends and Influence People"
+"Dale Carnegie"
+"292/292"
+"")
+
+("It's Not All About Me"
+"Robin Dreeke"
+"102/102"
+"")
+
+("Rich Dad Poor Dad"
+"Robert T Kiyosaki"
+"178/178"
+"")
+
+("Rich Dad's Guide to Investing"
+"Robert T Kiyosaki"
+"471/471"
+"")
+
+("Stalling for Time: My Life as an FBI Hostage Negotiator"
+"Gary Noesner"
+"226/226"
+"")
+
+("The Lean Startup"
+"Eric Ries"
+"296/296"
+"")
+
+("The Lost Art of the Good Schmooze: Building Rapport and Defusing Conflict in Everyday and Public Talk"
+"Diana Boxer"
+"203/203"
+"")
+
+("The War of Art"
+"Steven Pressfield"
+"192/192"
+"")
+
+("The Way of the Superior Man"
+"David Deida"
+"207/207"
+"")
+
+("Think and Grow Rich"
+"Napoleon Hill"
+"204/204"
+"")
+
+("Thwarting Enemies at Home and Abroad"
+"William Johnson"
+"264/264"
+"")
+
+("The CIA: The Cult of Intelligence"
+"Victor Marchetti"
+"720/720"
+"")
+
+("Identifying Malicious Code Through Reverse Engineering"
+"Abhishek Singh"
+"188/188"
+"")
+
+("Three Men In A Boat"
+"Jerome K. Jerome"
+"128/128"
+"")
+
+
+))
+(provide books-other)
