@@ -1,12 +1,14 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://yourdomain.com"
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Kevin's Blog
+#email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  My blog, mostly about programming, security, privacy and Unixy things.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yukipyon.me" # the base hostname & protocol for your site
+#twitter_username: jekyllrb
+github_username: yukipyon
+host: 192.168.100.9
+#detach: true
 
 # Build settings
 markdown: kramdown
-permalink: pretty
