@@ -1,0 +1,1 @@
+html=$(cat index.html)
