@@ -1,4 +1,4 @@
 beelzebub
 =========
 
-A static blog framework.
+My blog hosted at http://klamp.works.
