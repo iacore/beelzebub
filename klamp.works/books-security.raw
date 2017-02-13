@@ -87,6 +87,45 @@
 "188/188"
 "")
 
+("Designing BSD Rootkits"
+"Joseph Kong"
+"142/142"
+"")
+
+("Underground"
+"Julian Assange"
+"321/321"
+"")
+
+("Dissecting the hack"
+"Jayson Street"
+"360/360"
+"")
+
+("War 2.0"
+"Thomas Rid, Marc Hecker"
+"280/280"
+"")
+
+("A Bug Hunter's Diary"
+"Tobias Klein"
+"208/208"
+"")
+
+("Red Team: How to Succeed By Thinking Like the Enemy"
+"Micah Zenko"
+"338/338"
+"")
+
+("The Hacker Playbook: Practical Guide To Penetration Testing"
+"Peter Kim"
+"294/294"
+"")
+
+("The Browser Hacker's Handbook"
+"Wade Alcorn, Christian Frichot, Michele Orru"
+"648/648"
+"")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ))
 (provide books-security)
