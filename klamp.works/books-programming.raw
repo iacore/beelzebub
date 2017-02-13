@@ -247,5 +247,16 @@
 "464/464"
 ())
 
+("Software Design"
+"David Budgen"
+"468/468"
+())
+
+("The Art of Designing Embedded Systems"
+"Jack Ganssle"
+"312/312"
+())
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ))
 (provide books-programming)
