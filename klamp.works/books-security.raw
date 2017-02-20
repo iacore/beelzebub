@@ -126,6 +126,12 @@
 "Wade Alcorn, Christian Frichot, Michele Orru"
 "648/648"
 "")
+
+("Countdown to Zero Day: Stuxnet"
+"Kim Zetter"
+"448/448"
+"")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ))
 (provide books-security)
