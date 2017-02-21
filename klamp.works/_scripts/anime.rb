@@ -15,12 +15,12 @@ puts "|-|-----------|-----|----|--------|"
 
 tables.each { |table|
     tds = table.css('td')
-    num = tds[0].text
-    url = tds[1].css("a")[2]['href']
-    title = tds[1].css("a")[2].text
-    score = tds[2].text
-    type = tds[3].text
-    eps = tds[4].text
+    num = tds[0].text.strip
+    url = tds[1].css("a")[2]['href'].strip
+    title = tds[1].css("a")[2].text.strip
+    score = tds[2].text.strip
+    type = tds[3].text.strip
+    eps = tds[4].text.strip
 
     puts "|#{num}|[#{title}](http://myanimelist.net#{url})|#{score}|#{type}|#{eps}|"
 }
