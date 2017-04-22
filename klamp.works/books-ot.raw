@@ -146,6 +146,26 @@
 "288/288")
 ())
 
+("(HG2G 1) The Hitchhiker's Guide to the Galaxy"
+"Douglas Adams"
+"193/193"
+())
+
+("(HG2G 2) The Restaurant at the End of the Universe"
+"Douglas Adams"
+"250/250"
+())
+
+("(HG2G 3) Life, the Universe and Everything"
+"Douglas Adams"
+"224/224"
+())
+
+("(HG2G 4) So Long, and Thanks for All the Fish"
+"Douglas Adams"
+"225/225"
+())
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ))
 (provide books-other)
