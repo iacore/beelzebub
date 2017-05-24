@@ -132,6 +132,10 @@
 "448/448"
 "")
 
+("Gray Hat Python: Python Programming for Hackers and Reverse Engineers"
+"Justin Seitz"
+"232/232"
+"")
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ))
 (provide books-security)
