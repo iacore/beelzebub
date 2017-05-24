@@ -136,6 +136,12 @@
 "Justin Seitz"
 "232/232"
 "")
+
+("The Best of 2600: A Hacker Odyssey"
+"Emmanuel Goldstein"
+"888/888"
+"")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ))
 (provide books-security)
