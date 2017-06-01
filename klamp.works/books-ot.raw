@@ -1,181 +1,217 @@
 #lang racket
 (define books-other '(
 
+; 2014
 ("A History of Japan"
 "R.H.P. Mason and J.G. Caiger"
 "400/400"
 "")
 
+; 2015
 ("How to Win Friends and Influence People"
 "Dale Carnegie"
 "292/292"
 "")
 
+; 2015
 ("It's Not All About Me"
 "Robin Dreeke"
 "102/102"
 "")
 
+; 2015
 ("Rich Dad Poor Dad"
 "Robert T Kiyosaki"
 "178/178"
 "")
 
+; 2015
 ("Rich Dad's Guide to Investing"
 "Robert T Kiyosaki"
 "471/471"
 "")
 
+; 2015
 ("Stalling for Time: My Life as an FBI Hostage Negotiator"
 "Gary Noesner"
 "226/226"
 "")
 
+; 2015
 ("The Lean Startup"
 "Eric Ries"
 "296/296"
 "")
 
+; 2015
 ("The Lost Art of the Good Schmooze: Building Rapport and Defusing Conflict in Everyday and Public Talk"
 "Diana Boxer"
 "203/203"
 "")
 
+; 2015
 ("The War of Art"
 "Steven Pressfield"
 "192/192"
 "")
 
+; 2015
 ("The Way of the Superior Man"
 "David Deida"
 "207/207"
 "")
 
+; 2015
 ("Think and Grow Rich"
 "Napoleon Hill"
 "204/204"
 "")
 
+; 2016
 ("Thwarting Enemies at Home and Abroad"
 "William Johnson"
 "264/264"
 "")
 
+; 2016
 ("The CIA: The Cult of Intelligence"
 "Victor Marchetti"
 "720/720"
 "")
 
+; 2015
 ("Three Men In A Boat"
 "Jerome K. Jerome"
 "128/128"
 "")
 
+; 2016
 ("The Catcher in the Rye"
   "J. D. Salinger"
   "214/214"
   "")
 
+; 2016
 ("Getaway: Driving Techniques for Escape and Evasion"
   "Ronald Eriksen"
   "50/50"
   "")
 
+; 2016
 ("Surely You're Joking, Mr. Feynman!"
   "Richard Feynman"
   "350/350"
   "")
 
+; 2016
 ("How to Instantly Connect with Anyone"
   "Leil Lowndes"
   "337/337"
   "")
 
+; 2016
 ("Necessary Illusions: Thought Control in Democratic Societies"
   "Noam Chomsky"
   "422/422"
   "")
 
+; 2017
 ("How Not to Be a Dick: An Everyday Etiquette Guide"
   "Meghan Doherty"
   "192/192"
   "")
 
+; 2017
 ("A Guide to the Good Life"
 "James Patrick Cronin"
 "434/557"
 ())
 
+; 2017
 ("The Pentagon's Brain: An Uncensored History of DARPA"
 "Annie Jacobsen"
 "576/576"
 ())
 
+; 2017
 ("Animal Farm"
 "George Orwell"
 "144/144"
 ())
 
+; 2016
 ("Brave New World"
 "Aldous Huxley"
 "268/268"
 ())
 
+; 2016
 ("Blink"
 "Malcolm Gladwell"
 "296/296"
 ())
 
+; 2016
 ("British Politics"
 "Tony Wright"
 "152/152"
 ())
 
+; 2016
 ("Anarchism"
 "Colin Ward"
 "126/126"
 ())
 
+; 2016
 ("How to Be a People Magnet"
 "Leil Lowndes"
 "267/267"
 ())
 
+; 2016
 ("How to Start and Make a Conversation"
 "Christopher Gottschalk"
 "288/288")
 ())
 
+; 2017
 ("(HG2G 1) The Hitchhiker's Guide to the Galaxy"
 "Douglas Adams"
 "193/193"
 ())
 
+; 2017
 ("(HG2G 2) The Restaurant at the End of the Universe"
 "Douglas Adams"
 "250/250"
 ())
 
+; 2017
 ("(HG2G 3) Life, the Universe and Everything"
 "Douglas Adams"
 "224/224"
 ())
 
+; 2017
 ("(HG2G 4) So Long, and Thanks for All the Fish"
 "Douglas Adams"
 "225/225"
 ())
 
+; 2017
 ("The God Delusion"
 "Richard Dawkins"
 "464/464"
 ())
 
+; 2017
 ("1984"
 "George Orwell"
 "328/328"
 ())
 
+; 2017
 ("(Asoiaf 1) A Game of Thrones"
 "George R. R. Martin"
 "694/694"
