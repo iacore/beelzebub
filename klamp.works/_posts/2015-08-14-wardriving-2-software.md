@@ -2,10 +2,9 @@
 layout: post
 title:  Wardriving Part 2 - Software
 date: 2015-08-14 20:34:32
-permalink: wardriving2
 categories: 
 ---
-[Part 1]({{ site.baseurl }}/wardriving1) of this series contains an overview of a practical hardware configuration for wardriving. This part will cover the software component of that setup.
+Part 1 of this series contains an overview of a practical hardware configuration for wardriving. This part will cover the software component of that setup.
 
 Operating System
 ===
@@ -60,7 +59,7 @@ A simple init script can be used to initialise the various componants at boot ti
                     RETVAL=1
     esac
     exit $RETVAL
-                          
+
 Call it something like `/etc/init.d/start_psniff.sh` and then put something like the following line in `/etc/inittab`.
 
     2:23:respawn:/home/miku/start_psniff.sh &

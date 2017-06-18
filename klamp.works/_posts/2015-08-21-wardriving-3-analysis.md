@@ -2,11 +2,8 @@
 layout: post
 title:  Wardriving Part 3 - Analysis
 date: 2015-08-21 20:09:20
-permalink: wardriving3
 categories: 
 ---
-Also see [Part 1 Hardware]({{ site.baseurl }}/wardriving1) and [Part 2 Software]({{ site.baseurl }}/wardriving2).
-
 Kismet may produce a number of different files: `kistxt`, `kisxml`, `nettxt`, `alert`, `pcapdump` etc. The files of most interest are the ones with the `netxml` extention. Reading the output files as they are is a tedious task while certain parts such as the GPS coordinates will be completely meaningless. A useful tool for visualising the data is Google Earth. 
 
 Google Earth can take input files in the format of [Keyhole Markup Language](https://developers.google.com/kml/documentation/kmlreference) which is based on XML.  There are a number of ready made tool available for converting Kismet output to KML form: [pykismetkml](https://code.google.com/p/pykismetkml/)(Python), [Kismet-to-KML](https://github.com/exp/Kismet-to-KML)(Perl) and one I wrote myself [amnixiel](https://github.com/yukipyon/amnixiel)(Clojure).

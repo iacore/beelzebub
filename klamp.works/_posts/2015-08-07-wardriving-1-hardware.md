@@ -2,7 +2,6 @@
 layout: post
 title:  "Wardriving Part 1 - Hardware"
 date:   2015-08-07 20:16:12
-permalink: wardriving1
 categories: 
 ---
 Wardriving is the pasttime of passively gathering information on wireless networks, usually with the goal of visually plotting that information on a geographical map. In this series of posts I will cover a viable approach to wardriving.
@@ -42,5 +41,3 @@ Putting it All Together
 A final setup may look something like this.
 
 ![wardriving-hardware-setup]({{ site.baseurl }}/images/wardriving-hardware-setup.jpg)
-
-In the [next part]({{ site.baseurl }}/wardriving2) of this series I will cover the software component of this setup.
