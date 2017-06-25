@@ -142,6 +142,11 @@
 "888/888"
 "")
 
+("Learning Linux Binary Analysis"
+"Ryan \"elfmaster\" O'Neill"
+"282/282"
+"")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ))
 (provide books-security)
