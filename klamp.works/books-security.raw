@@ -147,6 +147,11 @@
 "282/282"
 "")
 
+("Carry On: Sound Advice From Schneier on Security"
+"Bruce Schneier"
+"384/384"
+"")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ))
 (provide books-security)
