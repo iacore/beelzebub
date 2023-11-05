@@ -50,9 +50,10 @@ hello.c
           sexp_load_standard_ports(ctx, NULL, stdin, stdout, stderr, 0);
     
           sexp_gc_var1(file_path);
-          sexp_gc_preserve1(ctx, file_path);
-    
+          
           file_path = sexp_c_string(ctx, "hello.ss", -1);
+          sexp_gc_preserve1(ctx, file_path);
+          
           sexp_load(ctx, file_path, NULL);
     
           sexp_gc_release1(ctx);
